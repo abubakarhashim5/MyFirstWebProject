@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Projects Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .portfolio-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 360px;
+        }
+        h1 {
+            color: navy;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .project-btn {
+            display: block;
+            background-color: navy;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            margin: 12px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .project-btn:hover {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        <h1>My Web Projects</h1>
+        <p>Select a project below to view live:</p>
+        
+        <!-- Relative hyperlinks pointing to your exact file names -->
+        <a href="Victorias_Journal.html" class="project-btn">Victoria's Journal</a>
+        <a href="Hotel_reservation_form.html" class="project-btn">Hotel Reservation Form</a>
+    </div>
+
+</body>
+</html>
