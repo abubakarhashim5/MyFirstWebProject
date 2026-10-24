@@ -1,0 +1,111 @@
+<head>
+    <title>Continental Hotel Reservation Form</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background-color: aliceblue;
+            width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid navy;
+        }
+        h2 {
+            color: red;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            background-color: lightblue;
+            border: 1px solid navy;
+        }
+        td {
+            border: 1px solid navy;
+            padding: 8px;
+        }
+        .label-cell {
+            font-weight: bold;
+            color: navy;
+            text-align: right;
+            width: 30%;
+        }
+        .input-full {
+            width: 90%;
+        }
+        .input-half {
+            width: 44%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2 align="center">Continental Hotel Reservation Form</h2>
+    
+    <form action="/action_page.php">
+        <table cellspacing="0">
+            <tr>
+                <td class="label-cell">Name</td>
+                <td><input type="text" class="input-full" value="Enter your name"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">eMail</td>
+                <td><input type="text" class="input-full" value="info@continental.pk"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Mobile No</td>
+                <td><input type="text" class="input-full" value="Enter your cell number"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Arrival Time</td>
+                <td><input type="text" class="input-full" value="Enter your arrival time"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Departure</td>
+                <td>
+                    <input type="text" class="input-half" placeholder="DD/MM/YYYY" value="DD/MM/YYYY">
+                    <input type="text" class="input-half" placeholder="HH:MM" value="HH:MM">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Room Type</td>
+                <td>
+                    <input type="radio" name="room"> Single
+                    <input type="radio" name="room"> Double <br>
+                    <input type="radio" name="room"> Presidential Suite
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Preferences</td>
+                <td>
+                    <input type="checkbox"> Non-Smoking <br>
+                    <input type="checkbox"> Internet <br>
+                    <input type="checkbox"> Firm Mattress
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Mode of Payment</td>
+                <td>
+                    <input type="checkbox"> Cash
+                    <input type="checkbox"> Check <br>
+                    <input type="checkbox"> Credit Card
+                    <select>
+                        <option>Select Card</option>
+                        <option>Visa</option>
+                        <option>Mastercard</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Send Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
