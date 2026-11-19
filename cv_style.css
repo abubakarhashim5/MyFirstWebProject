@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.banner {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.banner h1 {
+    margin: 10px 0 5px 0;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.container {
+    width: 750px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+h2 {
+    color: navy;
+    border-bottom: 2px solid navy;
+    padding-bottom: 4px;
+    margin-top: 25px;
+}
+
+.contact-box {
+    border: 2px solid navy;
+    padding: 12px 20px;
+    background-color: powderblue;
+    border-radius: 4px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: teal;
+    color: white;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 12px;
+}
+
+.skills-list span {
+    display: inline-block;
+    width: 150px;
+}
+
+details {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 8px 12px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid lightgray;
+}
+
+.footer a {
+    color: navy;
+    font-weight: bold;
+}

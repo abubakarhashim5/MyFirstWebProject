@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <title>Explore Pakistan - Plan Your Trip</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0 0 5px 0;
+        }
+        .header p {
+            margin: 0;
+            font-style: italic;
+        }
+        .nav {
+            background-color: darkslategrey;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: bold;
+        }
+        .nav a.active {
+            background-color: teal;
+            border-radius: 4px;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 25px;
+            border: 1px solid lightgray;
+        }
+        h2 {
+            color: teal;
+            margin-top: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: teal;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        fieldset {
+            border: 1px solid teal;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: teal;
+            padding: 0 8px;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 160px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea {
+            width: 350px;
+            padding: 6px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-submit {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-reset {
+            background-color: lightgray;
+            color: black;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: darkslategrey;
+            color: white;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Explore Pakistan</h1>
+    <p>Beautiful Places • Rich Culture • Unforgettable Experiences</p>
+</div>
+
+<div class="nav">
+    <a href="C:\Users\ADMIN\OneDrive\Desktop\IICT Web Dev\26l_0603_task3_home.html">Home</a>
+    <a href="C:\Users\ADMIN\OneDrive\Desktop\IICT Web Dev\26l_0603_task3_plan.html" class="active">Plan Your Trip</a>
+</div>
+
+<div class="container">
+
+    <h2>Plan Your Trip</h2>
+    <p>Fill in the form below to plan your dream trip to Pakistan. Make sure to provide all the required details so we can suggest the best options for you.</p>
+
+    <a href="home.html" class="back-link">&larr; Back to Home</a>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trip Details</legend>
+            <div class="form-group">
+                <label for="destination">Destination *</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select a destination</option>
+                    <option value="Hunza Valley">Hunza Valley</option>
+                    <option value="Skardu">Skardu</option>
+                    <option value="Murree">Murree</option>
+                    <option value="Swat Valley">Swat Valley</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dep_date">Departure Date *</label>
+                <input type="date" id="dep_date" name="dep_date" required>
+            </div>
+            <div class="form-group">
+                <label for="travelers">Number of Travelers</label>
+                <input type="number" id="travelers" name="travelers" min="1" max="10" value="1"> (1 - 10)
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Travel Preferences</legend>
+            <div class="form-group">
+                <label>Travel Type *</label>
+                <input type="radio" id="solo" name="travel_type" value="Solo" checked>
+                <label for="solo" style="width:auto; font-weight:normal;">Solo</label> &nbsp;
+                <input type="radio" id="family" name="travel_type" value="Family">
+                <label for="family" style="width:auto; font-weight:normal;">Family</label> &nbsp;
+                <input type="radio" id="friends" name="travel_type" value="Friends">
+                <label for="friends" style="width:auto; font-weight:normal;">Friends</label>
+            </div>
+            <div class="form-group">
+                <label style="vertical-align:top;">Interests</label>
+                <div style="display:inline-block;">
+                    <input type="checkbox" id="sightseeing" name="interests" value="Sightseeing">
+                    <label for="sightseeing" style="width:auto; font-weight:normal;">Sightseeing</label> &nbsp;
+                    <input type="checkbox" id="photography" name="interests" value="Photography">
+                    <label for="photography" style="width:auto; font-weight:normal;">Photography</label><br>
+                    <input type="checkbox" id="hiking" name="interests" value="Hiking">
+                    <label for="hiking" style="width:auto; font-weight:normal;">Hiking</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="shopping" name="interests" value="Shopping">
+                    <label for="shopping" style="width:auto; font-weight:normal;">Shopping</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Requests</legend>
+            <div class="form-group">
+                <label for="requests" style="display:block; width:100%; margin-bottom:5px;">Tell us if you have any special requests:</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="e.g. room preference, dietary needs, etc."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="button-group">
+            <input type="submit" value="Submit" class="btn-submit">
+            <input type="reset" value="Reset" class="btn-reset">
+        </div>
+
+    </form>
+
+</div>
+
+<div class="footer">
+    Made by Abu Bakar Hashim | Roll No: 26L-0603
+</div>
+
+</body>
+</html>
