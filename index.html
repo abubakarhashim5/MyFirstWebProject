@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Projects Portfolio</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .portfolio-card {
+            background-color: #ffffff;
+            padding: 36px 32px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1e40af;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: #0f172a;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0 0 8px 0;
+        }
+
+        p {
+            color: #64748b;
+            font-size: 15px;
+            margin: 0 0 28px 0;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .project-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8fafc;
+            color: #1e293b;
+            border: 2px solid #e2e8f0;
+            text-decoration: none;
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.25s ease;
+        }
+
+        .project-btn span.arrow {
+            color: #2563eb;
+            font-weight: 800;
+            transition: transform 0.25s ease;
+        }
+
+        .project-btn:hover {
+            background-color: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+        }
+
+        .project-btn:hover span.arrow {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        <div class="badge">HTML & CSS Showcase</div>
+        <h1>My Web Projects</h1>
+        <p>Select a project below to view live:</p>
+        
+        <div class="project-list">
+            <!-- Make sure these href filenames match your saved HTML files -->
+            <a href="tips.html" class="project-btn">
+                <span>Everyday Smart Habits</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            
+            <a href="Hotel_reservation_form.html" class="project-btn">
+                <span>Hotel Reservation Form</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            
+            <a href="Cafe_Menu.html" class="project-btn">
+                <span>FAST Cafe Menu</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            
+            <a href="cv.html" class="project-btn">
+                <span>Resume</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+            
+            <a href="tour_home.html" class="project-btn"
+		href="tour_plan.html" class="project-btn">
+                <span>Plan your tour</span>
+                <span class="arrow">&rarr;</span>
+            </a>
+        </div>
+
+        <div class="footer-note">Built with HTML5 & CSS3</div>
+    </div>
+
+</body>
+</html>

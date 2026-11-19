@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Smart Habits</title>
+    <!-- Clean, friendly typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eef5f2;
+            color: #2d3748;
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .journal-wrapper {
+            background-color: #ffffff;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        /* Header Section */
+        .header-box {
+            width: 100%;
+            background: linear-gradient(135deg, #2b6cb0 0%, #38b2ac 100%);
+            padding: 28px 30px;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        .header-title {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 34px;
+            text-align: right;
+            margin: 0;
+        }
+
+        .header-sub {
+            color: #e6fffa;
+            font-size: 16px;
+            text-align: right;
+            margin: 6px 0 0 0;
+        }
+
+        /* Sidebar: Simple Daily Checklist */
+        .sidebar {
+            flex: 1 1 200px;
+            background-color: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-top: 5px solid #38b2ac;
+            border-radius: 12px;
+            padding: 20px;
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #2b6cb0;
+            font-size: 20px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            padding: 10px 0;
+            border-bottom: 1px solid #edf2f7;
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.4;
+        }
+
+        .sidebar li:last-child {
+            border-bottom: none;
+        }
+
+        /* Main Content: Simple Life Tips */
+        .main-content {
+            flex: 3 1 500px;
+        }
+
+        .entry-box {
+            background-color: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            overflow: auto;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .entry-box:hover {
+            transform: translateY(-3px);
+            border-color: #38b2ac;
+        }
+
+        .entry-title {
+            color: #1a202c;
+            font-size: 22px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .entry-date {
+            font-size: 13px;
+            font-weight: 800;
+            background-color: #e6fffa;
+            color: #234e52;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .entry-box p {
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 16px;
+            margin: 0 0 14px 0;
+        }
+
+        .entry-box img {
+            float: right;
+            width: 170px;
+            height: 125px;
+            object-fit: cover;
+            margin: 0 0 12px 18px;
+            border-radius: 10px;
+        }
+
+        .takeaway-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 12px 15px;
+            font-size: 15px;
+            color: #2c5282;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="journal-wrapper">
+        <!-- Header -->
+        <div class="header-box">
+            <h1 class="header-title">Everyday Smart Habits</h1>
+            <p class="header-sub">Simple tips for better focus, health, and daily life</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Quick Daily Wins</h3>
+            <ul>
+                <li><strong>Morning:</strong> Drink 1 glass of water before checking your phone.</li>
+                <li><strong>Work:</strong> Take a 5-minute break every hour to rest your eyes.</li>
+                <li><strong>Evening:</strong> Dim bright screens 30 minutes before sleep.</li>
+                <li><strong>Anytime:</strong> Take 3 slow, deep breaths when feeling stressed.</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="entry-box">
+                <h2 class="entry-title">
+                    <span class="entry-date">FOCUS TIP</span> The 2-Minute Rule
+                </h2>
+                <img src="notebook.jpg" alt="Clean notebook and pen">
+                <p>
+                    Small chores—like washing a plate, replying to a short message, or putting away clothes—often pile up because we keep putting them off.
+                </p>
+                <p class="takeaway-box">
+                    <strong>How to use it:</strong> If a task takes less than two minutes to finish, do it right away instead of saving it for later.
+                </p>
+            </div>
+
+            <div class="entry-box">
+                <h2 class="entry-title">
+                    <span class="entry-date">HEALTH TIP</span> The 20-20-20 Eye Rule
+                </h2>
+                <img src="person.jfif" alt="Person looking out a window">
+                <p>
+                    Staring at phones, TVs, or computers for hours makes your eyes tired and can cause headaches. Giving your eye muscles a quick break keeps your vision comfortable.
+                </p>
+                <p class="takeaway-box">
+                    <strong>How to use it:</strong> Every <strong>20 minutes</strong>, look at something <strong>20 feet away</strong> (like out a window) for at least <strong>20 seconds</strong>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

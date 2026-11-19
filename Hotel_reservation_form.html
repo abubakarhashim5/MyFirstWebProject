@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continental Hotel Reservation Form</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 6px solid #1a365d;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-header h2 {
+            color: #1a365d;
+            font-size: 26px;
+            margin: 0 0 6px 0;
+        }
+
+        .form-header p {
+            color: #64748b;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+            padding-top: 20px;
+        }
+
+        .label-cell {
+            font-weight: bold;
+            color: #1e293b;
+            text-align: right;
+            width: 32%;
+            padding-right: 15px;
+            font-size: 14px;
+        }
+
+        /* Clean Input Boxes */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            padding: 9px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            color: #1e293b;
+            background-color: #f8fafc;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #2563eb;
+            background-color: #ffffff;
+        }
+
+        .input-full {
+            width: 100%;
+        }
+
+        .input-half {
+            width: 48%;
+        }
+
+        /* Clickable Labels for Radio & Checkboxes */
+        .option-label {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            background-color: #1a365d;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #2c5282;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        <h2>Continental Hotel Reservation</h2>
+        <p>Fill out the details below to book your stay</p>
+    </div>
+    
+    <form action="/action_page.php" method="POST">
+        <table>
+            <tr>
+                <td class="label-cell"><label for="name">Full Name</label></td>
+                <td><input type="text" id="name" name="name" class="input-full" placeholder="e.g. Ali Khan" required></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="email">Email Address</label></td>
+                <td><input type="email" id="email" name="email" class="input-full" placeholder="e.g. guest@example.com" required></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="mobile">Mobile No</label></td>
+                <td><input type="tel" id="mobile" name="mobile" class="input-full" placeholder="e.g. 0300-1234567" required></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="arrival">Arrival Date & Time</label></td>
+                <td>
+                    <input type="date" id="arrival" name="arrival_date" class="input-half" required>
+                    <input type="time" name="arrival_time" class="input-half" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="departure">Departure Date & Time</label></td>
+                <td>
+                    <input type="date" id="departure" name="departure_date" class="input-half" required>
+                    <input type="time" name="departure_time" class="input-half" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Room Type</td>
+                <td>
+                    <label class="option-label"><input type="radio" name="room" value="single" required> Single</label>
+                    <label class="option-label"><input type="radio" name="room" value="double"> Double</label><br>
+                    <label class="option-label"><input type="radio" name="room" value="suite"> Presidential Suite</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Preferences</td>
+                <td>
+                    <label class="option-label"><input type="checkbox" name="pref" value="non-smoking"> Non-Smoking</label><br>
+                    <label class="option-label"><input type="checkbox" name="pref" value="internet"> Free Wi-Fi</label><br>
+                    <label class="option-label"><input type="checkbox" name="pref" value="mattress"> Firm Mattress</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Payment Mode</td>
+                <td>
+                    <label class="option-label"><input type="radio" name="payment" value="cash" required> Cash</label>
+                    <label class="option-label"><input type="radio" name="payment" value="check"> Check</label><br>
+                    <label class="option-label"><input type="radio" name="payment" value="card"> Credit Card</label>
+                    <select name="card_type">
+                        <option value="">Select Card</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Confirm Reservation" class="submit-btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
